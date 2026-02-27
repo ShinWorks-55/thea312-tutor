@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>THEA 312 Voice Tutor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>THEA 312 Voice Tutor</h1>
+    <p class="sub">Speak to learn. Click a topic to begin.</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Topics</h2>
+      <div id="topics" class="topics"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Teacher</h2>
+      <div class="controls">
+        <button id="btnListen">🎙️ Hold to Talk</button>
+        <button id="btnStop">🛑 Stop Speaking</button>
+
+        <label class="mode">
+          Mode:
+          <select id="modeSelect">
+            <option value="teach">Teach</option>
+            <option value="quiz">Quiz</option>
+            <option value="review">Review</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="status">
+        <div><strong>Current Topic:</strong> <span id="currentTopic">None</span></div>
+        <div><strong>You said:</strong> <span id="heard">—</span></div>
+      </div>
+
+      <div class="chat">
+        <div class="bubble teacher" id="teacherBubble">Pick a topic, then ask: “Teach me this.”</div>
+      </div>
+
+      <div class="hint">
+        Try: “Teach me the Sublime.” “Quiz me on Garrick.” “Review Romanticism vs Enlightenment.”
+      </div>
+    </section>
+  </main>
+
+  <script src="curriculum.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

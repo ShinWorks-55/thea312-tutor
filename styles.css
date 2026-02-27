@@ -1,0 +1,33 @@
+:root { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+body { margin: 0; background: #0b0d12; color: #e9edf5; }
+header { padding: 22px 18px; border-bottom: 1px solid #222a38; }
+h1 { margin: 0 0 6px; font-size: 22px; }
+.sub { margin: 0; opacity: .8; }
+
+main { display: grid; grid-template-columns: 1fr 1.4fr; gap: 14px; padding: 14px; }
+.panel { background: #111625; border: 1px solid #222a38; border-radius: 14px; padding: 14px; }
+
+.topics { display: flex; flex-wrap: wrap; gap: 8px; }
+.topicBtn {
+  border: 1px solid #2a3650; background: #0f1422; color: #e9edf5;
+  padding: 10px 10px; border-radius: 12px; cursor: pointer; font-size: 13px;
+}
+.topicBtn.active { border-color: #7aa2ff; box-shadow: 0 0 0 2px rgba(122,162,255,.15); }
+
+.controls { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+button {
+  border: 1px solid #2a3650; background: #0f1422; color: #e9edf5;
+  padding: 10px 12px; border-radius: 12px; cursor: pointer;
+}
+button:active { transform: translateY(1px); }
+
+.status { margin-top: 10px; opacity: .9; font-size: 13px; display: grid; gap: 6px; }
+
+.chat { margin-top: 12px; display: grid; gap: 10px; }
+.bubble {
+  padding: 12px 12px; border-radius: 14px; line-height: 1.35;
+  border: 1px solid #2a3650;
+}
+.teacher { background: #0f1422; }
+.hint { margin-top: 10px; font-size: 12px; opacity: .7; }
+.mode select { margin-left: 8px; background: #0f1422; color: #e9edf5; border: 1px solid #2a3650; border-radius: 10px; padding: 8px; }
